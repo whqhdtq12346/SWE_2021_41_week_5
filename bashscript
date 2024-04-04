@@ -1,0 +1,7 @@
+#!/bin/bash
+
+for letter in {a..z}; do
+	mv ./files/"$letter"* "$letter"
+	upper="${letter^^}"
+	mv ./files/"$upper"* "$letter"
+done
